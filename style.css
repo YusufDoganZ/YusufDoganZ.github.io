@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-right-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #0049E5; 
+  color: black; 
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+#clock-container {
+    text-align: center; 
+    position: fixed;
+    bottom: 54vh; 
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: transparent; 
+}
+
+
+
+
+.bottom-right-button:hover {
+  background-color: #ff5555; 
+}
+
+
+.bottom-right-button:active {
+  background-color: #0049E5; 
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #121212;
+  cursor: none;
+}
+
+.music-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+
+.music-button.active #playIcon:before {
+  content: "\f04c";
+}
+
+.fas.fa-play:before {
+  content: "\f144";
+}
+
+.cursor {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 16456400;
+}
+.cursor--large {
+  --size: 40px;
+  border: 1px solid #ff3c3c;
+}
+.cursor--small {
+  --size: 10px;
+  background: #ff3c3c;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main button {
+  margin-right: 10px;
+  --size: 60px;
+  border: none;
+  min-width: var(--size);
+  min-height: var(--size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: reds;
+  transition: background 200ms ease, color 200ms ease;
+  cursor: none;
+}
+main:hover button {
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.04);
+}
+main:hover button:hover {
+  color: #fff;
+}
+
+.support {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  display: flex;
+}
+.support a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.8rem;
+  backface-visibility: hidden;
+  transition: all 150ms ease;
+}
+.support a:hover {
+  transform: scale(1.1);
+}
+
+a {
+  position: absolute;
+  top: 10px; 
+  left: 10px;
+  text-decoration: none;
+}
+
+
+.Flex{
+  background-color:#121212;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  height: 100%;
+  z-index: 10550;
+  transition: 0.5s;
+}
+.Flex button{
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 40px;
+  transition: 0.5s;
+}
+.Flex button:hover{
+  color: rgb(39, 39, 39);
+}
+
+
+video#background-video-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+video#background-video-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+video#background-video-3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+video#background-video-4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+#top-bar {
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    font-size: 24px;
+}
+
+#palestine-flag {
+    margin-right: 20px; 
+}
+
+#palestine-flag img {
+    width: 80px; 
+    height: auto;
+    animation: flagAnimation 2s infinite alternate; 
+}
+
+
+.centered {
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

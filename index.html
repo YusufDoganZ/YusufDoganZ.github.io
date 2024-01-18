@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>FlexYD</title>
+  <link rel="stylesheet" href="./style.css">
+  
+
+</head>
+<body>
+
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FlexYd</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/audiojs/2.8.2/audio.min.js"></script>
+	  
+
+    <link rel="stylesheet" href="./style.css">
+	
+    <style>
+        .music-button {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Flex">
+        <button class="button-start">Click me</button>
+    </div>
+
+<div id="clock-container">
+    <div id="clock" style="color: red; font-size: 3em;"></div>
+</div>
+
+<audio class="music" loop>
+      <source src="">
+</audio>
+
+<video id="background-video-1" src="2.mp4"></video>
+<video id="background-video-2" src="1.mp4"></video>
+<video id="background-video-3" src="2.mp4"></video>
+<video id="background-video-4" src="1.mp4"></video>
+
+
+
+
+
+
+
+	
+<button id="playButton" class="music-button" onclick="handleIconClick()">
+    <i id="playIcon" class="fa-solid fa-volume-high fa-2xl" style="color: #3881ff;" style="font-size: 50px;"></i>
+</button>
+
+    <main>
+        <button data-link="https://yusufdoganz.github.io/Website/">
+            Social Medias
+       
+        </button>
+        <button data-link="https://yusufdoganz.github.io/Projects/">
+            Projects
+        </button>
+        <button data-link="https://github.com/yusufdoganz">
+            Github       
+        </button>
+    </main>
+
+    <div class="cursor cursor--large"></div>
+    <div class="cursor cursor--small"></div>
+
+    <audio id="music"
+        src="https://cdn.discordapp.com/attachments/1133001504614252664/1162213280937418844/x2mate.com_-_-_Mostafa_Elnesr_-_ANA_Z3LTK_Official_Audio_128_kbps.mp3?ex=653b1e77&is=6528a977&hm=c7171d8afd9fdac97c725a7d6544817fdbca305da3c9b63e0e64f40455c5cb1b&"></audio>
+  
+    <script>
+        var playIcon = document.getElementById("playIcon");
+        var isPlaying = false;
+
+        function handleIconClick() {
+            if (isPlaying) {
+                playIcon.src = "https://cdn.discordapp.com/attachments/1133000349012217928/1159225580974260324/icons8-sound-50.png?ex=65303ff3&is=651dcaf3&hm=0efe5aa626ed098afa389b2301c46e02ac953999462fcdadb750f336cc018ede&";
+                isPlaying = false;
+            } else {
+                playIcon.src = "https://cdn.discordapp.com/attachments/1133000349012217928/1159225808079040534/icons8-mute-50.png?ex=6530402a&is=651dcb2a&hm=f49c7e063d52aefea571d7724d9a491c44f42d387e579012073a5d997c85b594&";
+                isPlaying = true;
+            }
+        }
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
+    <script src='https://unpkg.com/ionicons@5.0.0/dist/ionicons.js'></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
